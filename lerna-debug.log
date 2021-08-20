@@ -1,0 +1,8 @@
+31 error Error: Command failed with exit code 1: git add -- packages/utils/package.json packages/core/package.json packages/core/package-lock.json lerna.json
+31 error The following paths are ignored by one of your .gitignore files:
+31 error packages/core/package-lock.json
+31 error Use -f if you really want to add them.
+31 error     at makeError (/Users/twinnie/Desktop/twinnie-cli-dev/twinnie-cli-dev/node_modules/execa/lib/error.js:60:11)
+31 error     at handlePromise (/Users/twinnie/Desktop/twinnie-cli-dev/twinnie-cli-dev/node_modules/execa/index.js:118:26)
+31 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+31 error     at async Promise.all (index 0)
