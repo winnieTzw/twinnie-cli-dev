@@ -1,6 +1,6 @@
 {
   "name": "@twinnie-cli-dev/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> twinnie-cli-dev core",
   "author": "taozhiwei <278643823@qq.com>",
   "homepage": "",
@@ -20,6 +20,6 @@
     "test": "echo \"run tests from core\""
   },
   "dependencies": {
-    "@twinnie-cli-dev/utils": "^1.0.2"
+    "@twinnie-cli-dev/utils": "^1.0.3"
   }
 }
