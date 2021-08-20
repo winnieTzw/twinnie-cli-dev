@@ -1,13 +1,13 @@
 {
   "name": "@twinnie-cli-dev/core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "> twinnie-cli-dev core",
   "author": "taozhiwei <278643823@qq.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/core.js",
   "bin": {
-    "twinnie-cli-dev":"bin/index.js"
+    "twinnie-cli-dev": "bin/index.js"
   },
   "directories": {
     "lib": "lib",
@@ -23,7 +23,7 @@
     "test": "echo \"run tests from core\""
   },
   "dependencies": {
-    "@twinnie-cli-dev/utils": "^1.0.4"
+    "@twinnie-cli-dev/utils": "^1.0.5"
   },
   "gitHead": "af6c753e99b0add639922f551aaef48cd1d4d329"
 }
