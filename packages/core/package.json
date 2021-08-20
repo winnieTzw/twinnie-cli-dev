@@ -6,6 +6,9 @@
   "homepage": "",
   "license": "ISC",
   "main": "lib/core.js",
+  "bin": {
+    "twinnie-cli-dev":"bin/index.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -21,5 +24,6 @@
   },
   "dependencies": {
     "@twinnie-cli-dev/utils": "^1.0.4"
-  }
+  },
+  "gitHead": "af6c753e99b0add639922f551aaef48cd1d4d329"
 }
