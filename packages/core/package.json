@@ -1,0 +1,25 @@
+{
+  "name": "@twinnie-cli-dev/core",
+  "version": "1.0.0",
+  "description": "> twinnie-cli-dev core",
+  "author": "taozhiwei <278643823@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "echo \"run tests from core\""
+  },
+  "dependencies": {
+    "@twinnie-cli-dev/utils": "^1.0.0"
+  }
+}
