@@ -9,6 +9,8 @@ module.exports = core;
 // .node -> process.dlopen
 const semver = require('semver')
 const colors = require('colors/safe')
+const userHome = require('user-home')
+const pathExists = require('path-exists').sync
 const pkg = require('../package.json')
 const log = require('@twinnie-cli-dev/log')
 const constant = require('./const')
@@ -17,13 +19,21 @@ function core() {
   try {
     checkPkgVersion()
     checkNodeVersion()
+    checkRoot()
+    checkUserHome()
   } catch (e) {
     log.error(e.message)
   }
 
 }
 
-// 检查node版本
+
+function checkUserHome(){
+  if(!userHome || !pathExists(userHome)){
+    throw new Error(colors.red(`当前登录用户目录不存在！`))
+  }
+}
+
 function checkNodeVersion() {
   // 获取当前版本号
   const currentVersion = process.version;
@@ -36,8 +46,11 @@ function checkNodeVersion() {
   }
 }
 
-// 检查版本号
+function checkRoot(){
+  const rootCheck = require('root-check')
+  rootCheck()
+}
+
 function checkPkgVersion() {
   log.notice(pkg.version)
-  log.success(pkg.version)
 }
