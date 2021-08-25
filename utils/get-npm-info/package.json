@@ -13,6 +13,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/winnieTzw/twinnie-cli-dev.git"
@@ -27,5 +30,6 @@
     "axios": "^0.21.1",
     "semver": "^7.3.4",
     "url-join": "^4.0.1"
-  }
+  },
+  "gitHead": "88cd4fb75756c4b22343f458d1dc21cbf0b832aa"
 }

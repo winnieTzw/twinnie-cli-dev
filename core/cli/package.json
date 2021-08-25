@@ -24,8 +24,8 @@
     "test": "echo \"run tests from core\""
   },
   "dependencies": {
-    "@twinnie-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@twinnie-cli-dev/log": "file:../../utils/log",
+    "@twinnie-cli-dev/get-npm-info": "^1.1.0",
+    "@twinnie-cli-dev/log": "^1.0.9",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "import-local": "^3.0.2",
@@ -36,5 +36,5 @@
     "semver": "^7.3.4",
     "user-home": "^2.0.0"
   },
-  "gitHead": "36823857cbc5ce1bcadd3901cadd7e3d6cdd609f"
+  "gitHead": "88cd4fb75756c4b22343f458d1dc21cbf0b832aa"
 }
