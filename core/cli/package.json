@@ -1,6 +1,6 @@
 {
   "name": "@twinnie-cli-dev/core",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "> twinnie-cli-dev core",
   "author": "taozhiwei <278643823@qq.com>",
   "homepage": "",
@@ -24,7 +24,7 @@
     "test": "echo \"run tests from core\""
   },
   "dependencies": {
-    "@twinnie-cli-dev/get-npm-info": "^1.1.0",
+    "@twinnie-cli-dev/get-npm-info": "^1.1.1",
     "@twinnie-cli-dev/log": "^1.0.9",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
