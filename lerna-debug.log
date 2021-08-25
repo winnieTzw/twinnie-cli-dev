@@ -1,8 +1,16 @@
-31 error Error: Command failed with exit code 1: git add -- packages/utils/package.json packages/core/package.json packages/core/package-lock.json lerna.json
-31 error The following paths are ignored by one of your .gitignore files:
-31 error packages/core/package-lock.json
-31 error Use -f if you really want to add them.
-31 error     at makeError (/Users/twinnie/Desktop/twinnie-cli-dev/twinnie-cli-dev/node_modules/execa/lib/error.js:60:11)
-31 error     at handlePromise (/Users/twinnie/Desktop/twinnie-cli-dev/twinnie-cli-dev/node_modules/execa/index.js:118:26)
-31 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
-31 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [ 'utils/get-npm-info/' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'D:\\nodejs\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: 'axios'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath C:\Users\L1218\Desktop\twinnie-cli-dev
+3 error FetchError: request to https://registry.npmjs.org/axios failed, reason: connect ETIMEDOUT 104.16.19.35:443
+3 error     at ClientRequest.<anonymous> (D:\nvm\v12.16.3\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:110:14)
+3 error     at ClientRequest.emit (events.js:310:20)
+3 error     at TLSSocket.socketErrorListener (_http_client.js:426:9)
+3 error     at TLSSocket.emit (events.js:322:22)
+3 error     at emitErrorNT (internal/streams/destroy.js:92:8)
+3 error     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)

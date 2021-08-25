@@ -1,10 +1,7 @@
 {
-  "name": "@twinnie-cli-dev/log",
-  "version": "1.0.7",
-  "description": "twinnie-cli-dev log",
-  "keywords": [
-    "log"
-  ],
+  "name": "get-npm-info",
+  "version": "1.0.8",
+  "description": "get npm info",
   "author": "L1218 <taozhiwei@smec-cn.com>",
   "homepage": "https://github.com/winnieTzw/twinnie-cli-dev#readme",
   "license": "ISC",
@@ -16,9 +13,6 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/winnieTzw/twinnie-cli-dev.git"
@@ -30,6 +24,8 @@
     "url": "https://github.com/winnieTzw/twinnie-cli-dev/issues"
   },
   "dependencies": {
-    "npmlog": "^5.0.0"
+    "axios": "^0.21.1",
+    "semver": "^7.3.4",
+    "url-join": "^4.0.1"
   }
 }
