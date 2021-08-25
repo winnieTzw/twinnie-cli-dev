@@ -102,9 +102,12 @@ async function checkGlobalUpdate() {
   const currentVersion = pkg.version
   const npmName = pkg.name
   // 2.调研npm API ，获取所有版本号
-  const { getSemverVersion } = require('@twinnie-cli-dev/get-npm-info')
-  const versions = await getSemverVersion(currentVersion, npmName)
-
+  const { getNpmSemverVersion } = require('@twinnie-cli-dev/get-npm-info')
+  const lastVersion = await getNpmSemverVersion(currentVersion, npmName)
+  if(lastVersion && semver.gt(lastVersion,currentVersion)) {
+    log.warn(colors.yellow('更新提示：',`请手动更新 ${npmName}, 当前版本：${currentVersion}, 最新版本：${lastVersion}
+                 更新命令： npm install -g ${npmName}`))
+  }
   // 3.提取所有版本号，比对哪些版本号大于当前版本号
   // 4.获取最新版本号，提示用户更新到改版本
 }
