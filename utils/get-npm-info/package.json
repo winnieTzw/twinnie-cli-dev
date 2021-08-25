@@ -1,5 +1,5 @@
 {
-  "name": "get-npm-info",
+  "name": "@twinnie-cli-dev/get-npm-info",
   "version": "1.0.9",
   "description": "get npm info",
   "author": "L1218 <taozhiwei@smec-cn.com>",
